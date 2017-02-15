@@ -5,10 +5,16 @@
     "cloudatcost": "^2.0.2",
     "inquirer": "^2.0.0",
     "nconf": "^0.8.4",
-    "ronin": "^0.3.11"
+    "ronin": "^0.3.11",
+    "snyk": "^1.25.0"
   },
   "bin": {
     "cloudatcost": "index.js"
   },
-  "version": "0.0.3"
+  "version": "0.0.3",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
